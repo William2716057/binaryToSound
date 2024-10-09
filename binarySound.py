@@ -13,17 +13,13 @@ print(binary_result)
 
 duration = 0.5
 sample_rate = 44100
-#code to play sound
-#if input is 1
+#take each 0 bit and play as chosen frequency
 for bit in binary_result:
     if bit == '0':
-        frequency = 220
-        #duration = 0.5
-        #sample_rate = 44100
+        frequency = 220 #edit here
+
     else:
-        frequency = 400
-        #duration = 0.5
-        #sample_rate = 44100
+        frequency = 400 #edit here
         
     t = np.linspace(0, duration, int(sample_rate * duration), endpoint=False)
     tone = 0.5 * np.sin(2 * np.pi * frequency * t)
