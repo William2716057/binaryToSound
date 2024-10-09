@@ -11,7 +11,7 @@ message = input("Enter message: ")
 binary_result = input_to_binary(message)
 print(binary_result)
 
-duration = 0.5
+duration = 0.5 #edit here
 sample_rate = 44100
 #take each 0 bit and play as chosen frequency
 for bit in binary_result:
